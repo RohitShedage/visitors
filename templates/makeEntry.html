@@ -1,0 +1,14 @@
+<ion-view title="Make Entry" id="page1">
+  <ion-content padding="true" class="has-header">
+    <form id="makeEntry-form3" class="list">
+      <label class="item item-input" id="makeEntry-search1">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search By Contact Number" ng-model="data.searchContactNumber" ng-value="data.searchContactNumber">
+      </label>
+      <button id="makeEntry-button3" ng-click="search()" class="button button-positive  button-block">Search</button>
+    </form>
+    <ion-list id="makeEntry-list2">
+      <ion-item id="makeEntry-list-item4" ui-sref="menu.cart" ng-if="data.visitors.length" ng-repeat="visitor in data.visitors" ng-model="visitor.name">{{visitor.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

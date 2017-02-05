@@ -1,0 +1,42 @@
+<ion-view title="Add Visitor" id="page3">
+  <ion-content padding="true" class="has-header">
+    <form id="addVisitor-form2" class="list">
+      <label class="item item-input" id="addVisitor-input3">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Enter Your Name" ng-model="data.name">
+      </label>
+      <label class="item item-input" id="addVisitor-input4">
+        <span class="input-label">Contact</span>
+        <input type="tel" placeholder="Enter Contact Number" ng-model="data.contact">
+      </label>
+      <ion-item class="range range-positive" id="addVisitor-range1"> No Of Visitors
+        <input type="range" value="1" min="0" max="5" step="1" ng-model="data.visitorCount">
+      </ion-item>
+      <label class="item item-input" id="addVisitor-input6">
+        <span class="input-label">Other Visitors </span>
+        <input type="text" placeholder="Other Visitors  Names" ng-model="data.otherVisitors">
+      </label>
+      <label class="item item-input" id="addVisitor-input7">
+        <span class="input-label">Vehicle Number</span>
+        <input type="text" placeholder="Registration Number" ng-model="data.vehicleNumber">
+      </label>
+      <label class="item item-input" id="addVisitor-input8">
+        <span class="input-label">In Time</span>
+        <input type="text" placeholder="Entry Time" ng-model="data.inTime">
+      </label>
+      <label class="item item-select" id="addVisitor-select1">
+        <span class="input-label">Purpose Of Visit</span>
+        <select ng-model="data.purpose">
+          <option>Visit</option>
+          <option>Home Delivery</option>
+          <option>Marketing</option>
+          <option>Other</option>
+          <option>House Maid</option>
+        </select>
+      </label>
+      <label class="item item-input" id="addVisitor-textarea1">
+        <span class="input-label">Comments</span><textarea placeholder="Additional Comments" ng-model="data.comments"></textarea></label>
+      <button id="addVisitor-button1" ng-click="addVisitor()" class="button button-positive  button-block">Add Visitor</button>
+    </form>
+  </ion-content>
+</ion-view>
